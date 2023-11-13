@@ -1,7 +1,5 @@
 # Atlan-frontend-SQL-App
 
-# SQL Query Web Application
-
 ## Overview
 
 This project introduces a user-friendly web app designed for executing and managing SQL queries. It caters to data analysts, providing a seamless interface to run queries, view results, and save frequently used queries. The tab-based layout facilitates easy query organization and management.
