@@ -34,11 +34,20 @@ This project introduces a user-friendly web app designed for executing and manag
 
 ## Optimizations for Performance
 
-- **State Management with Zustand:** ...
-- **Pagination for Query Results:** ...
-- **Debounced and Throttled Function Calls:** ...
-- **Memoization and useCallback Hooks:** ...
-- **Local State Variables:** ...
+1. **Zustand State Management:**
+   Zustand is chosen over Context API to prevent unnecessary rerenders. It uses shallow comparison, rendering only components dependent on updated state, improving performance and efficiency.
+
+2. **Pagination for Query Results:**
+   Implemented pagination for query results, displaying a limited number of rows at a time. Enhances page load and rendering performance by avoiding rendering a large number of rows at once.
+
+3. **Debounced and Throttled Function Calls:**
+   Utilized debouncing for actions like data export, preventing repeated calls within a specified time. Throttling is applied, for example, when adding tabs, ensuring a smoother user experience by limiting excessive tab creations.
+
+4. **Memoization and useCallback Hooks:**
+   Memoization caches expensive calculations, avoiding redundant computations. useCallback memoizes callback functions, preventing unnecessary re-renders of child components by returning the same function instance on subsequent renders.
+
+5. **Local State Variables:**
+   Local state variables within components minimize rerenders, optimizing rendering performance. Only affected components are updated when state changes, reducing the scope of changes that trigger rerenders.
 
 ## Usage
 
